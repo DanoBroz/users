@@ -17,6 +17,11 @@ test("render one row per user", () => {
 
     const rows = within(screen.getByTestId("users")).getAllByRole("row");
 
+    // const { container } = render(<UserList users={users} />);
+
+    // // eslint-disable-next-line
+    // const rows = container.querySelectorAll("tbody tr");
+
     expect(rows).toHaveLength(2);
 });
 
